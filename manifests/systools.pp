@@ -1,16 +1,15 @@
 class systools (
-  $module_root = '/tmp/vagrant-puppet/manifests/modules/systools',
   $packages = [
-    'emacs23',
+    'emacs23-nox',
     'php-elisp',
     'puppet-el',
-    'htop'
+    'htop',
+    'git-core',
   ]
 ) {
   package { $packages:
     ensure => installed,
   }
-
   exec { 'apt-get update':
     command => "/usr/bin/apt-get update"
   }
