@@ -8,11 +8,10 @@ class systools (
   ]
 ) {
   package { $packages:
-    ensure => installed,
+    ensure => latest,
   }
   exec { 'apt-get update':
     command => "/usr/bin/apt-get update"
   }
-
   Package { require => Exec['apt-get update'] }
 }
