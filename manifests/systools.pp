@@ -1,7 +1,6 @@
 class systools (
   $packages = [
     'emacs23-nox',
-    'php-elisp',
     'puppet-el',
     'htop',
     'git-core',
