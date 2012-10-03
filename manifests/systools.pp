@@ -4,7 +4,8 @@ class systools (
     'puppet-el',
     'htop',
     'git-core',
-    'curl'
+    'curl',
+    'aptitude'
   ]
 ) {
   package { $packages:
